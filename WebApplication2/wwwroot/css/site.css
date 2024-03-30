@@ -1,5 +1,9 @@
+* {
+    font-family: "Nunito", "Arial", "Helvetica", "sans-serif";
+}
 html {
   font-size: 14px;
+ 
 }
 
 @media (min-width: 768px) {
@@ -13,10 +17,34 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    
+}
+img{
+    display:block;
+    max-width: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+   
+    color: white;
+    Background: rgb(45,45,45);
+}
+.navbar-brand {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.nav-item a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+ 
+}
+navbar-nav flex-grow-1{
+    display: flex;
+    flex-wrap: wrap;
 }

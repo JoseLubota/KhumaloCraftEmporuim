@@ -5,7 +5,7 @@ namespace WebApplication2.Models
 {
     public class userTBL
     {
-        public static string conString = "Server=tcp:clvd-sql-server5.database.windows.net,1433;Initial Catalog=clvd-db;Persist Security Info=False;User ID=Jose;Password=2004Fr@ney;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+        public static string conString = "Server=tcp:clvd-sql-server.database.windows.net,1433;Initial Catalog=clvd-db;Persist Security Info=False;User ID=Jose;Password=2004Fr@ney;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
 
         public static SqlConnection con = new SqlConnection(conString);
 
@@ -18,7 +18,7 @@ namespace WebApplication2.Models
         {
             try
             {
-                string sql = "INSERT INTO userTBL (userName, userSurname, userEmail) VALUES(@Name, @Surname, @Email)";
+                string sql = "INSERT INTO userTBL (name, surname, email) VALUES(@Name, @Surname, @Email)";
                 SqlCommand cmd = new SqlCommand(sql, con);
                 cmd.Parameters.AddWithValue("@Name", u.Name);
                 cmd.Parameters.AddWithValue("@Surname", u.Surname);
