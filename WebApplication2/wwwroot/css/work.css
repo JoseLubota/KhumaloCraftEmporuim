@@ -1,6 +1,16 @@
-﻿.products-section{
-    max-width: 90%;
+﻿body {
+    
+}
+.products-section {
+    max-width: 100%;
     margin: 60px auto;
+    
+}
+.products-container {
+    background-color: gray;
+    width: 100%;
+    padding: 100px;
+   
 }
 .product-header{
     font-size: 3em;
@@ -71,6 +81,7 @@
 .product-item-price:hover{
     background:black;
     color:white;
+    opacity: 60%;
 }
 
 
